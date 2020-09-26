@@ -1,0 +1,50 @@
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    width: 500px;
+}
+
+.profile__userInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile__userInfo__username {
+    margin: 10px 0;
+}
+
+.profile__userInfo__email {
+    margin: 10px 0;
+}
+
+.razorpay__update {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.razorpay__update__info {
+    padding: 20px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 4px;
+    color: white;
+
+}
+
+.razorpay__update__form {
+    margin: 20px 0;
+}
+
+.zoom__update__info {
+    padding: 20px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 20px;;
+}

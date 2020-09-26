@@ -1,0 +1,13 @@
+
+
+.category{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.category__image img{
+    width: 120px;
+    border-radius: 80px;
+    object-fit: cover;
+}

@@ -1,0 +1,66 @@
+.mycard {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.mycard__content {
+    display: flex;
+    text-align: center;
+    width: 600px;
+    align-items: center;
+    transform-style: preserve-3d;
+    justify-content: space-between;
+}
+
+.mycard__image {
+    display: flex;
+    width: 160px;
+    margin: 6px 6px;
+}
+
+.myevent__subcount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.myevent__title {
+    background-color: turquoise;
+    padding: 2px 4px;
+    border-radius: 20px;
+}
+
+.mycard__image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.mycard__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mycard__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mycard__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+

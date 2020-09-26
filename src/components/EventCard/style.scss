@@ -1,0 +1,149 @@
+:root {
+    --level-one: translateZ(1rem);
+    --level-two: translateZ(2rem);
+    --level-three: translateZ(3rem);
+
+    --clr: #b7c9e5;
+}
+
+.card {
+    width: 340px;
+    height: 200px;
+    border-radius: 4px;
+    margin: 0 20px 20px 0;
+}
+
+.card__content {
+    text-align: center;
+    position: relative;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+    transform: rotateY(.5turn);
+}
+
+.card__front,
+.card__back {
+    width: 340px;
+    height: 200px;
+    border-radius: 4px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+}
+
+.card__front::before {
+    position: absolute;
+    transform: var(--level-one)
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+    display: block;
+}
+
+.event__title {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 0px 5px;
+    bottom: 10px;
+    left: 5px;
+    transform: var(--level-three);
+    order: 2;
+}
+
+.event__category {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 0px 5px;
+    bottom: 10px;
+    right: 5px;
+    transform: var(--level-two)
+}
+
+.event__category:hover {
+    display: none;
+}
+
+.event__subcount {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    transform: var(--level-two)
+}
+
+.card__back {
+    transform: rotateY(.5turn);
+    color: #b7c9e5;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+}
+
+.card__body {
+    margin: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.event__date {
+    background-color: white;
+    color: #333333;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    transform: var(--level-three)
+}
+
+.event__price {
+    background-color: white;
+    color: #333333;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: var(--level-two)
+}
+
+.event__day {
+    color: rgb(122, 0, 0);
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.event__month {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+
+
+.event__priceitem {
+    color: rgb(122, 0, 0);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.event__time {
+    color: rgb(122, 0, 0);
+    font-weight: 500;
+    font-size: 18px;
+}

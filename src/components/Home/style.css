@@ -1,0 +1,66 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.home__categories {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.home__categories__title {
+    color: rgb(80, 80, 80);
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.home__categories__cards {
+    display: flex;
+    margin: 20px 0px;
+
+}
+
+.home__events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home__events__title {
+    color: rgb(80, 80, 80);
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.home__events__container {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.home__events__card {
+    display: flex;
+    position: relative;
+    margin: 20px 40px ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.home__categories__allevents {
+    margin: 10px 0;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border-radius: 20px;
+}
